@@ -34,6 +34,7 @@ export interface QueueMetrics {
   dead: number;
   successRate: number; // percentage
   avgAttempts: number;
+  isComplete: boolean;
 }
 
 // --- Backoff calculation ---
@@ -90,7 +91,9 @@ export class RetryQueue {
   constructor(config: RetryQueueConfig) {
     this.config = config;
   }
-
+  configure(config: RetryQueueConfig) {
+    this.config = config;
+  }
   // Register a callback so the UI can react to state changes
   subscribe(fn: (jobs: Job[]) => void) {
     this.onUpdate = fn;
@@ -233,6 +236,7 @@ export class RetryQueue {
               (jobs.reduce((sum, j) => sum + j.attempts, 0) / total) * 10,
             ) / 10
           : 0,
+      isComplete: total > 0 && resolved === total,
     };
   }
 }
