@@ -38,19 +38,17 @@ Every module here:
 
 **Real-world system:** Component Dependency Tracer  
 **What it does:** Takes a JSON dependency graph (like a webpack bundle or React tree), runs DFS, detects circular dependencies, and shows traversal order  
-**Where you see this at work:** Refactoring large components, build tooling, microservice tracing  
-**Companion problem:** Number of Islands / File System Tree
+**Where you see this at work:** Refactoring large components, build tooling, microservice tracing
 
 **Core code deliverable:** `dependencyTracer.ts` - a utility that accepts a graph and returns traversal path, circular dep warnings, and depth stats
 
 ---
 
-### Module 02 - Queue Design ⬅️ Starting here
+### Module 02 - Queue Design
 
 **Real-world system:** HTTP Retry Queue with exponential backoff  
 **What it does:** Fires batches of API calls (some fail randomly), queues retries with backoff, tracks dead-letter jobs, shows live metrics  
-**Where you see this at work:** Every resilient microservice, AWS SQS, Stripe webhook retries  
-**Companion problem:** Task Scheduler / BFS Level Order
+**Where you see this at work:** Every resilient microservice, AWS SQS, Stripe webhook retries
 
 **Core code deliverable:** `retryQueue.ts` - production-ready retry queue with concurrency control, backoff strategy, dead-letter queue, and drain-on-shutdown
 
@@ -60,8 +58,7 @@ Every module here:
 
 **Real-world system:** Query Optimizer  
 **What it does:** Given a dataset + query type, recommends and benchmarks which sort algorithm fits, shows actual perf numbers  
-**Where you see this at work:** Database query planners, data pipeline optimization  
-**Companion problem:** Meeting Rooms / Merge Intervals
+**Where you see this at work:** Database query planners, data pipeline optimization
 
 **Core code deliverable:** `queryOptimizer.ts` - evaluates data shape and recommends sort strategy with benchmarks
 
@@ -71,8 +68,7 @@ Every module here:
 
 **Real-world system:** LRU Cache with TTL  
 **What it does:** In-memory cache layer with configurable size, TTL, eviction policy, hit/miss stats  
-**Where you see this at work:** Redis conceptually, CDN edge caching, memoization layers  
-**Companion problem:** Two Sum / Group Anagrams
+**Where you see this at work:** Redis conceptually, CDN edge caching, memoization layers
 
 **Core code deliverable:** `lruCache.ts` - drop-in LRU cache with TTL, eviction hooks, and observable stats
 
@@ -82,8 +78,7 @@ Every module here:
 
 **Real-world system:** API Rate Limiter  
 **What it does:** Sliding window log rate limiter on an API route, shows allowed/rejected requests over time  
-**Where you see this at work:** GitHub API, Stripe, AWS - every public API uses this  
-**Companion problem:** Max Sliding Window / Longest Substring Without Repeat
+**Where you see this at work:** GitHub API, Stripe, AWS - every public API uses this
 
 **Core code deliverable:** `rateLimiter.ts` - sliding window rate limiter you could wrap any API route with
 
@@ -99,43 +94,37 @@ Every module here:
 
 ---
 
-### 📦 Module 02 - Retry Queue (First)
-
-**Core logic**
-
-- [ ] `retryQueue.ts` - base queue class with enqueue/dequeue
-- [ ] Add exponential backoff strategy
-- [ ] Add max retry limit + dead-letter queue
-- [ ] Add concurrency control (max N in-flight)
-- [ ] Add drain() for graceful shutdown
-- [ ] Unit tests for all core behaviors
-
-**API Route**
-
-- [ ] `POST /api/modules/retry-queue/fire` - fires a batch of jobs (configurable fail rate)
-- [ ] `GET /api/modules/retry-queue/status` - returns live queue state
-
-**UI**
-
-- [ ] Controls panel (batch size, fail rate, max retries, concurrency limit)
-- [ ] Live job board - shows each job: pending / in-flight / retrying / done / dead
-- [ ] Metrics panel - success rate, avg retries, throughput, dead-letter count
-- [ ] Visual backoff timeline per job
-
-**Docs**
-
-- [ ] `problem.md` - Task Scheduler companion problem written out
-- [ ] `solution.ts` - clean annotated solution
-- [ ] `modules/02-retry-queue/README.md` - production context + DSA breakdown
-
----
-
 ### 📦 Module 01 - DFS Thinking
 
 - [ ] `dependencyTracer.ts` core logic
 - [ ] Circular dep detection
 - [ ] API route + UI
-- [ ] Tests + docs
+
+---
+
+### 📦 Module 02 - Retry Queue (First)
+
+**Core logic**
+
+- [x] `retryQueue.ts` - base queue class with enqueue/dequeue
+- [x] Add exponential backoff strategy
+- [x] Add max retry limit + dead-letter queue
+- [x] Add concurrency control (max N in-flight)
+- [x] Add drain() for graceful shutdown
+
+**API Route**
+
+- [x] `POST /api/modules/retry-queue/fire` - fires a batch of jobs (configurable fail rate)
+- [x] `GET /api/modules/retry-queue/status` - returns live queue state
+
+**UI**
+
+- [x] Controls panel (batch size, fail rate, max retries, concurrency limit)
+- [x] Live job board - shows each job: pending / in-flight / retrying / done / dead
+- [x] Metrics panel - success rate, avg retries, throughput, dead-letter count
+- [x] Visual backoff timeline per job
+
+- [x] `modules/02-retry-queue/README.md` - production context + DSA breakdown
 
 ---
 
@@ -144,7 +133,6 @@ Every module here:
 - [ ] `queryOptimizer.ts` core logic
 - [ ] Benchmarking harness
 - [ ] API route + UI
-- [ ] Tests + docs
 
 ---
 
@@ -153,7 +141,6 @@ Every module here:
 - [ ] `lruCache.ts` core logic
 - [ ] TTL + eviction
 - [ ] API route + UI
-- [ ] Tests + docs
 
 ---
 
@@ -162,7 +149,6 @@ Every module here:
 - [ ] `rateLimiter.ts` core logic
 - [ ] API route integration
 - [ ] UI
-- [ ] Tests + docs
 
 ---
 
