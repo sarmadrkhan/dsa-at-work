@@ -214,4 +214,7 @@ This is why AWS SQS exists. This is why Stripe retries webhooks for 72 hours. Th
 
 ## Companion Problem
 
+The problem distills the retry queue down to its mathematical core. In the queue, the backoff delay creates idle time between retries of the same job - other jobs fill that gap up to the concurrency limit. This problem models that exact mechanic: cooldown periods create idle slots, other tasks fill them greedily.
+The formula `(maxFreq - 1) \* (n + 1)` + maxCount is the same reasoning used when calculating the worst-case completion time of a retry system - how long until all jobs settle given a fixed cooldown and a limited number of worker slots.
+
 → See [`problem/problem.md`](./problem/problem.md)
