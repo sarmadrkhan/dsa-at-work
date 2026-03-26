@@ -90,7 +90,7 @@ export default function Home() {
       {/* Footer */}
       <div className="mt-20 text-neutral-600 text-sm">
         <p>
-          "The algorithms don't show up at work. The thinking does." — built
+          "The algorithms don't show up at work. The thinking does." - built
           module by module.
         </p>
       </div>
