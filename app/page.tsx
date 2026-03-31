@@ -9,7 +9,7 @@ const modules = [
     description:
       "Traces a component dependency graph, detects circular deps, and shows traversal order.",
     realWorld: "Webpack · React Trees · Microservice Tracing",
-    status: "coming-soon",
+    status: "ready",
   },
   {
     id: "02-retry-queue",
