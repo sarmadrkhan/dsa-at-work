@@ -105,7 +105,7 @@ export default function DFSThinkingPage() {
         <h1 className="text-3xl font-bold mb-2">Dependency Tracer</h1>
         <p className="text-neutral-400 max-w-xl">
           Select a graph to trace its dependencies using DFS. Detects circular
-          references and shows the full traversal — the same way webpack, tsc,
+          references and shows the full traversal - the same way webpack, tsc,
           and eslint analyze module graphs.
         </p>
       </div>
