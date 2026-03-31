@@ -39,7 +39,7 @@ const modules = [
     description:
       "In-memory cache with TTL, eviction policy, and hit/miss stats. Redis, conceptually.",
     realWorld: "CDN Edge Caching · Memoization Layers · Redis",
-    status: "coming-soon",
+    status: "ready",
   },
   {
     id: "05-sliding-window",
