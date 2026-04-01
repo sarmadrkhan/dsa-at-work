@@ -109,6 +109,11 @@ export default function DFSThinkingPage() {
           and eslint analyze module graphs.
         </p>
       </div>
+      <div className="mb-8 border border-yellow-900 bg-yellow-950 rounded-xl px-4 py-3 text-xs text-yellow-600 font-mono">
+        ⚠ State is in-memory and resets between server instances. On Vercel,
+        each session may start fresh — this is expected behaviour for a
+        stateless deployment.
+      </div>
 
       {/* Preset Selector */}
       <div className="mb-8">

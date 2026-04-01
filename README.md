@@ -96,9 +96,9 @@ Every module here:
 
 ### 📦 Module 01 - DFS Thinking
 
-- [ ] `dependencyTracer.ts` core logic
-- [ ] Circular dep detection
-- [ ] API route + UI
+- [x] `dependencyTracer.ts` core logic
+- [x] Circular dep detection
+- [x] API route + UI
 
 ---
 
@@ -130,25 +130,25 @@ Every module here:
 
 ### 📦 Module 03 - Sorting Trade-offs
 
-- [ ] `queryOptimizer.ts` core logic
-- [ ] Benchmarking harness
-- [ ] API route + UI
+- [x] `queryOptimizer.ts` core logic
+- [x] Benchmarking harness
+- [x] API route + UI
 
 ---
 
 ### 📦 Module 04 - Hashmap / LRU Cache
 
-- [ ] `lruCache.ts` core logic
-- [ ] TTL + eviction
-- [ ] API route + UI
+- [x] `lruCache.ts` core logic
+- [x] TTL + eviction
+- [x] API route + UI
 
 ---
 
 ### 📦 Module 05 - Sliding Window Rate Limiter
 
-- [ ] `rateLimiter.ts` core logic
-- [ ] API route integration
-- [ ] UI
+- [x] `rateLimiter.ts` core logic
+- [x] API route integration
+- [x] UI
 
 ---
 

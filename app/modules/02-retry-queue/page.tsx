@@ -100,7 +100,11 @@ export default function RetryQueuePage() {
           the queue in real time.
         </p>
       </div>
-
+      <div className="mb-8 border border-yellow-900 bg-yellow-950 rounded-xl px-4 py-3 text-xs text-yellow-600 font-mono">
+        ⚠ State is in-memory and resets between server instances. On Vercel,
+        each session may start fresh — this is expected behaviour for a
+        stateless deployment.
+      </div>
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
         {/* Config Panel */}
         <div className="lg:col-span-1 border border-neutral-800 rounded-xl p-5 flex flex-col gap-4">
