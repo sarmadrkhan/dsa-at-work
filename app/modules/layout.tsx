@@ -15,7 +15,7 @@ export default function ModulesLayout({
           >
             ← dsa-at-work
           </Link>
-          <div className="flex items-center gap-6">
+          <div className="hidden md:flex items-center gap-6">
             {[
               { href: "/modules/01-dfs-thinking", label: "01 DFS" },
               { href: "/modules/02-retry-queue", label: "02 Queue" },

@@ -116,7 +116,9 @@ function ModuleCard({ mod }: { mod: (typeof modules)[0] }) {
             )}
           </div>
           <p className="text-neutral-400 text-sm mb-2">{mod.description}</p>
-          <p className="text-neutral-600 text-xs font-mono">{mod.realWorld}</p>
+          <p className="text-neutral-600 text-xs font-mono truncate">
+            {mod.realWorld}
+          </p>
         </div>
       </div>
       {mod.status === "ready" && (
