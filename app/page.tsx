@@ -29,7 +29,7 @@ const modules = [
     description:
       "Recommends and benchmarks sort strategies based on your data shape and query type.",
     realWorld: "Database Query Planners · Data Pipelines",
-    status: "coming-soon",
+    status: "ready",
   },
   {
     id: "04-hashmap-cache",
