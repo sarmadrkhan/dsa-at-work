@@ -58,7 +58,7 @@ export default function Home() {
     <main className="min-h-screen bg-neutral-950 text-neutral-100 px-6 py-16 max-w-5xl mx-auto">
       {/* Header */}
       <div className="mb-16">
-        <h1 className="text-4xl font-bold tracking-tight mb-3">dsa-at-work</h1>
+        <h1 className="text-4xl font-bold tracking-tight mb-3">DSA-at-Work</h1>
         <p className="text-neutral-400 text-lg max-w-xl">
           How CS fundamentals actually show up in real codebases. Each module is
           a working system with the algorithm made explicit.
