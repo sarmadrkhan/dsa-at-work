@@ -162,3 +162,10 @@ The reason it shows up everywhere is the same reason it works: it goes deep befo
 When a senior engineer looks at a tangled module and instinctively starts tracing "this depends on that, which depends on that" - they're running DFS manually. This module just makes that process explicit and visual.
 
 ---
+
+## References
+
+- [Webpack - Circular Dependency Detection](https://webpack.js.org/plugins/circular-dependency-plugin/)
+- [TypeScript - Project References and Incremental Builds](https://www.typescriptlang.org/docs/handbook/project-references.html)
+- [eslint-plugin-import - no-cycle rule](https://github.com/import-js/eslint-plugin-import/blob/main/docs/rules/no-cycle.md)
+- [npm - How require() resolves modules](https://nodejs.org/api/modules.html#all-together)

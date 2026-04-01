@@ -161,3 +161,10 @@ The hashmap is what makes it fast. Without it, every lookup would require scanni
 This combination - `O(1)` lookups via hashmap, `O(1)` ordering via insertion-ordered Map - is why LRU is the default eviction policy in Redis, the browser cache, and most CDN implementations. It's the right trade-off between simplicity, speed, and effectiveness.
 
 ---
+
+## References
+
+- [Redis - LRU Eviction](https://redis.io/docs/latest/develop/reference/eviction/)
+- [Redis - Key Expiry](https://redis.io/docs/latest/develop/use/keyspace/#key-expiration)
+- [MDN - Map insertion order](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map)
+- [Cloudflare - CDN Cache Behaviour](https://developers.cloudflare.com/cache/concepts/cache-behavior/)

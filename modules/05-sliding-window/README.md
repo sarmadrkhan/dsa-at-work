@@ -155,3 +155,10 @@ A rate limiter is a sliding window problem in production clothing. The window mo
 The sliding window shows up wherever a system needs to reason about recent history without keeping all history. The log shrinks as time passes, old entries become irrelevant, and the decision is always based on the freshest slice of data. That property - recency-aware, bounded memory, rolling in time - is what makes it the right tool for rate limiting, error rate monitoring, fraud detection, and anywhere else that recent behavior matters more than total behavior.
 
 ---
+
+## References
+
+- [Stripe - Rate Limiting](https://stripe.com/docs/rate-limits)
+- [GitHub - Rate Limiting](https://docs.github.com/en/rest/using-the-rest-api/rate-limits-for-the-rest-api)
+- [AWS API Gateway - Throttling](https://docs.aws.amazon.com/apigateway/latest/developerguide/api-gateway-request-throttling.html)
+- [Cloudflare - Rate Limiting](https://developers.cloudflare.com/waf/rate-limiting-rules/)

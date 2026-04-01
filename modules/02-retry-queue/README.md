@@ -211,3 +211,10 @@ The queue **decouples** the producer (the thing that fires jobs) from the consum
 This is why AWS SQS exists. This is why Stripe retries webhooks for 72 hours. This is why every job processing system (Sidekiq, BullMQ, Celery) is built on this exact pattern.
 
 ---
+
+## References
+
+- [AWS - Exponential Backoff and Jitter](https://aws.amazon.com/blogs/architecture/exponential-backoff-and-jitter/)
+- [Stripe - Webhook Retries](https://stripe.com/docs/webhooks#retries)
+- [AWS SQS - Dead Letter Queues](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/sqs-dead-letter-queues.html)
+- [BullMQ - Job Retries](https://docs.bullmq.io/guide/retrying-failing-jobs)

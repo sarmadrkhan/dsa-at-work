@@ -159,3 +159,10 @@ The sorting trade-off shows up at work not when writing sort functions, but when
 Those decisions follow the same logic as choosing a sort algorithm - profile the data, identify the constraints, pick the trade-off that fits. That's what a query planner does on every query, and that's the thinking this module makes explicit.
 
 ---
+
+## References
+
+- [PostgreSQL - Planner / Optimizer](https://www.postgresql.org/docs/current/planner-optimizer.html)
+- [Python - Timsort](https://docs.python.org/3/howto/sorting.html)
+- [V8 - Array.sort implementation](https://v8.dev/blog/array-sort)
+- [Wikipedia - Timsort](https://en.wikipedia.org/wiki/Timsort)
