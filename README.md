@@ -152,29 +152,6 @@ Every module here:
 
 ---
 
-### 🎨 Phase Final - Polish
-
-- [ ] Consistent design system across all module UIs
-- [ ] Mobile responsive
-- [ ] Each module README links to real-world references (Stripe docs, AWS docs, etc.)
-- [ ] Root README polished with screenshots/gifs
-- [ ] Deploy to Vercel
-
----
-
-## 🚀 Getting Started
-
-```bash
-git clone https://github.com/yourusername/dsa-at-work
-cd dsa-at-work
-npm install
-npm run dev
-```
-
-Open [http://localhost:3000](http://localhost:3000)
-
----
-
 ## 📚 The Idea
 
 CS fundamentals don't show up at work as textbook problems. They show up as the thinking underneath every resilient, well-designed system. This repo documents that connection - one real system at a time.
