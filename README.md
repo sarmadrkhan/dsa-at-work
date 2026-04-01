@@ -15,6 +15,7 @@ Every module here:
 - Has a **README** that connects the CS pattern to where you'd actually see it - at companies like Amazon, Stripe, or Netflix
 
 ---
+## **Live demo:** [dsa-at-work.vercel.app](https://dsa-at-work.vercel.app)
 
 ## Stack
 
@@ -86,7 +87,6 @@ Every module here:
 
 ## Getting Started
 
-## **Live demo:** [dsa-at-work.vercel.app](https://dsa-at-work.vercel.app)
 
 ```bash
 git clone https://github.com/sarmadrkhan/dsa-at-work
