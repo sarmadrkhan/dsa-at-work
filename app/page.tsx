@@ -49,7 +49,7 @@ const modules = [
     description:
       "Sliding window log rate limiter on an API route. Shows allowed vs rejected over time.",
     realWorld: "GitHub API · Stripe · AWS API Gateway",
-    status: "coming-soon",
+    status: "ready",
   },
 ];
 
