@@ -1,4 +1,4 @@
-# Dsa-at-Work
+# DSA-at-Work
 
 > How the CS fundamentals actually show up in real codebases.
 
