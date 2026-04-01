@@ -1,4 +1,4 @@
-# dsa-at-work
+# Dsa-at-Work
 
 > How the CS fundamentals actually show up in real codebases.
 
@@ -6,7 +6,7 @@ A collection of real systems I've encountered in industry, each one tracing back
 
 ---
 
-## 🧭 Project Philosophy
+## Project Philosophy
 
 Every module here:
 
@@ -16,7 +16,7 @@ Every module here:
 
 ---
 
-## 🛠️ Stack
+## Stack
 
 | Layer     | Tech                                 |
 | --------- | ------------------------------------ |
@@ -32,7 +32,7 @@ Every module here:
 
 ---
 
-## 🗺️ Modules Roadmap
+## Modules Roadmap
 
 ### Module 01 - DFS Thinking
 
@@ -84,9 +84,22 @@ Every module here:
 
 ---
 
-## ✅ Build Checklist
+## Getting Started
 
-### 🏗️ Phase 0 - Project Setup
+## **Live demo:** [dsa-at-work.vercel.app](https://dsa-at-work.vercel.app)
+
+```bash
+git clone https://github.com/sarmadrkhan/dsa-at-work
+cd dsa-at-work
+npm install
+npm run dev
+```
+
+## Open [http://localhost:3000](http://localhost:3000)
+
+## Build Checklist
+
+### Phase 0 - Project Setup
 
 - [x] Init Next.js 14 project with TypeScript + Tailwind
 - [x] Build dashboard/home page with module cards
@@ -94,7 +107,7 @@ Every module here:
 
 ---
 
-### 📦 Module 01 - DFS Thinking
+### Module 01 - DFS Thinking
 
 - [x] `dependencyTracer.ts` core logic
 - [x] Circular dep detection
@@ -102,7 +115,7 @@ Every module here:
 
 ---
 
-### 📦 Module 02 - Retry Queue (First)
+### Module 02 - Retry Queue
 
 **Core logic**
 
@@ -128,7 +141,7 @@ Every module here:
 
 ---
 
-### 📦 Module 03 - Sorting Trade-offs
+### Module 03 - Sorting Trade-offs
 
 - [x] `queryOptimizer.ts` core logic
 - [x] Benchmarking harness
@@ -136,7 +149,7 @@ Every module here:
 
 ---
 
-### 📦 Module 04 - Hashmap / LRU Cache
+### Module 04 - Hashmap / LRU Cache
 
 - [x] `lruCache.ts` core logic
 - [x] TTL + eviction
@@ -144,7 +157,7 @@ Every module here:
 
 ---
 
-### 📦 Module 05 - Sliding Window Rate Limiter
+### Module 05 - Sliding Window Rate Limiter
 
 - [x] `rateLimiter.ts` core logic
 - [x] API route integration
@@ -152,7 +165,7 @@ Every module here:
 
 ---
 
-## 📚 The Idea
+## The Idea
 
 CS fundamentals don't show up at work as textbook problems. They show up as the thinking underneath every resilient, well-designed system. This repo documents that connection - one real system at a time.
 
